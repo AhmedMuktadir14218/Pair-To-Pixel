@@ -130,16 +130,16 @@ const navLinks = [
 ];
 
 const socialLinks = [
-  { icon: FaFacebook, href: "https://facebook.com/pairtopixel", color: "bg-[#1877F2]" },
-  { icon: FaInstagram, href: "https://instagram.com/pairtopixel", color: "bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-600" },
-  { icon: FaLinkedin, href: "https://linkedin.com/company/pairtopixel", color: "bg-[#0A66C2]" },
-  { icon: FaYoutube, href: "https://youtube.com/@pairtopixel", color: "bg-[#FF0000]" },
+  { icon: FaFacebook, href: "https://www.facebook.com/pairtopixel", color: "bg-[#1877F2]" },
+  { icon: FaInstagram, href: "https://www.instagram.com/pairtopixel/", color: "bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-600" },
+  { icon: FaLinkedin, href: "https://www.linkedin.com/company/pair-to-pixel", color: "bg-[#0A66C2]" },
+  { icon: FaYoutube, href: "https://www.youtube.com/@pairtopixel", color: "bg-[#FF0000]" },
 ];
 
 const Sidebar = ({ isOpen, toggleSidebar }) => {
   return (
     <>
-      {/* --- HAMBURGER ICON ADDED BACK --- */}
+      {/* --- HAMBURGER ICON --- */}
       <button
         onClick={toggleSidebar}
         className="fixed top-4 left-4 z-[60] lg:hidden p-3 rounded-lg bg-[#2A1919]/90 backdrop-blur-md text-white hover:bg-[#4d3232] transition-colors shadow-lg"
@@ -156,11 +156,11 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
           border-r border-[#4A2F2F]/30 shadow-2xl 
           flex flex-col items-center 
           transition-all duration-500 ease-in-out
-          w-64 lg:w-20 // Base widths
-          ${isOpen ? "translate-x-0 lg:!w-64" : "-translate-x-full lg:translate-x-0"} // The core logic
+          w-64 lg:w-20
+          ${isOpen ? "translate-x-0 lg:!w-64" : "-translate-x-full lg:translate-x-0"}
         `}
       >
-        {/* Logo Container (clickable for desktop toggle) */}
+        {/* Logo Container */}
         <div
           className="flex flex-col items-center mt-8 mb-10 cursor-pointer"
           onClick={toggleSidebar}
