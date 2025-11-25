@@ -110,7 +110,8 @@
 import React, { useRef, useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 
-import thumbnail1 from '../assets/Rectangle 3.png';
+// import thumbnail1 from '../assets/Rectangle 3.png';
+import thumbnail1 from '../assets/Rectangle 6.jpg';
 import thumbnail2 from '../assets/Rectangle 5.png';
 import thumbnail3 from '../assets/Rectangle 4.png';
 
@@ -124,22 +125,23 @@ const cardData = [
     delay: 0.5,
     videoLink: 'https://youtube.com/shorts/ciDJScjoR64?si=eZxBfw_rpqcAPYvb',
   },
-  {
+    {
     id: 2,
-    image: thumbnail2,
-    title: 'The Secret Weapon Behind Successful Businesses | 3D Product Modeling & Animation | Pair to Pixel',
-    description: "Bring your products to life with stunning 3D animation that grabs attention and builds trust. From startups to established brands, it's the secret to standing out and driving sales.",
-    delay: 0.3,
-    videoLink: 'https://youtu.be/VzUFvC6pdsk?si=2EFxJppkL3MKRhQF',
-  },
-  {
-    id: 3,
     image: thumbnail1,
     title: 'The #1 Visual Mistake That\'s Costing You Clients (And How to Fix It)',
     description: 'Discover why average designs cost businesses real clients, and how powerful visuals can grab attention, build trust, and boost sales.',
     delay: 0.1,
     videoLink: 'https://youtu.be/F7mLAPKjR9I?si=uJgZnAIjIaFsR8FL',
   },
+  {
+    id: 3,
+    image: thumbnail2,
+    title: 'Stop Wasting Money on Photoshoots — Try 3D Product Visualization',
+    description: "No location, no studio, no hassle for your product photoshoots. Just premium 3D visuals that make your product shine.",
+    delay: 0.3,
+    videoLink: 'https://youtu.be/qu5PbSOY6kY?si=RALKLyuoBAaLwYob',
+  }, 
+
 ];
 
 const VideoCard = ({ image, title, description, delay, videoLink }) => {

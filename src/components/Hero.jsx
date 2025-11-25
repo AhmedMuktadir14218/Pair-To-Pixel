@@ -1,3 +1,4 @@
+// src/components/Hero.jsx
 import React, { useRef, useEffect, useState } from 'react';
 import heroVideo from '../assets/heroBG_video.mp4';
 
@@ -6,24 +7,29 @@ const Hero = () => {
   const heroSectionRef = useRef(null);
   const [isVisible, setIsVisible] = useState(true);
 
+ 
+  const phoneNumber = "8801754593323";  
+  const message = "Hi Pair to Pixel, I want to start a project!"; // ডিফল্ট মেসেজ
+  
+  // WhatsApp লিংক তৈরি করা হচ্ছে
+  const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          // Hero section visible, play video
           if (videoRef.current) {
             videoRef.current.play().catch(err => console.log('Video play error:', err));
           }
           setIsVisible(true);
         } else {
-          // Hero section hidden, pause video
           if (videoRef.current) {
             videoRef.current.pause();
           }
           setIsVisible(false);
         }
       },
-      { threshold: 0.3 } // When 30% is visible
+      { threshold: 0.3 }
     );
 
     if (heroSectionRef.current) {
@@ -60,7 +66,7 @@ const Hero = () => {
               HI,<br />WE'RE PAIR TO PIXEL!
             </h1>
             <p className="text-lg sm:text-xl md:text-2xl font-light italic text-orange-400">
-              An Advertising Agency
+              A Digital Service Agency
             </p>
           </div>
           <p className="text-xs sm:text-sm md:text-base font-light leading-relaxed text-gray-300">
@@ -74,13 +80,22 @@ const Hero = () => {
             that feels alive, welcome, you've just found your creative partner.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
-            <a href="https://www.facebook.com/pairtopixel" className="w-full sm:w-auto"> 
-              <button className="w-full sm:w-auto px-4 sm:px-6 py-2.5 sm:py-3 text-sm sm:text-md font-bold text-white bg-red-600 rounded-md hover:bg-red-700 transition-colors duration-200">
+            
+            {/* ২. এই বাটনটি এখন WhatsApp এ নিয়ে যাবে */}
+            <a 
+              href={whatsappUrl} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="w-full sm:w-auto"
+            > 
+              <button className="w-full sm:w-auto px-4 sm:px-6 py-2.5 sm:py-3 text-sm sm:text-md font-bold text-white bg-red-600 rounded-md hover:bg-red-700 transition-colors duration-200 cursor-pointer">
                 Start Your Project
               </button>
             </a>
-            <a href="https://www.facebook.com/pairtopixel" className="w-full sm:w-auto">
-              <button className="w-full sm:w-auto px-4 sm:px-6 py-2.5 sm:py-3 text-sm sm:text-md font-bold text-white bg-gray-600 rounded-md hover:bg-gray-700 transition-colors duration-200">
+
+            {/* এই বাটনটি আগের মতোই Instagram এ যাবে */}
+            <a href='https://www.instagram.com/pairtopixel/' target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
+              <button className="w-full sm:w-auto px-4 sm:px-6 py-2.5 sm:py-3 text-sm sm:text-md font-bold text-white bg-gray-600 rounded-md hover:bg-gray-700 transition-colors duration-200 cursor-pointer">
                 Get 50% Off
               </button>
             </a>

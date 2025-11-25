@@ -122,6 +122,7 @@ import Testimonial from "./components/Testimonial";
 import Team from "./components/Team";
 import BrandClient from "./components/BrandClient";
 import Contact from "./components/Contact";
+import WhatsAppButton from "./components/WhatsAppButton";
  
 const App = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -190,6 +191,7 @@ const App = () => {
           <Contact/>
         </div>
       </main>
+      <WhatsAppButton />
     </div>
   );
 };

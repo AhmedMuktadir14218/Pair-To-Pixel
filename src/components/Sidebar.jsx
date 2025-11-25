@@ -124,7 +124,7 @@ import { Home, Settings, Briefcase, Info, Mail, Menu, X } from "lucide-react";
 const navLinks = [
   { name: "Home", href: "#home", icon: Home },
   { name: "Services", href: "#services", icon: Settings },
-  { name: "Portfolio", href: "#portfolio", icon: Briefcase },
+  { name: "Portfolio", href: "https://www.behance.net/pairtopixel", icon: Briefcase },
   { name: "About", href: "#about", icon: Info },
   { name: "Contact", href: "#contact", icon: Mail },
 ];
