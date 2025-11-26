@@ -5,9 +5,9 @@ import React, { useRef, useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 
 // import thumbnail1 from '../assets/Rectangle 3.png';
-import thumbnail1 from '../assets/video1.jpg';
+import thumbnail1 from '../assets/Video1.jpg';
 import thumbnail2 from '../assets/Video2.png';
-import thumbnail3 from '../assets/video3.jpg';
+import thumbnail3 from '../assets/Video3.jpg';
 
 // Data structure with YouTube links
 const cardData = [
