@@ -7,7 +7,7 @@ const WhatsAppButton = () => {
   const [isOpen, setIsOpen] = useState(false);
 
    
-  const phoneNumber = "8801754593323"; 
+  const phoneNumber = "8801604176228"; 
   const defaultMessage = "Hello, I would like to inquire about your services.";
 
   useEffect(() => {

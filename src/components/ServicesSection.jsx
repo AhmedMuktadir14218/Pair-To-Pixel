@@ -13,8 +13,7 @@ export const services = [
   {
     icon: icon1,
     title: "3D PRODUCT MODELING & ANIMATION",
-    description:
-      "See your ideas in full 3D glory. We craft photo real products and animation that make viewers pause, admire, and remember. From every angle, your product tells its story.",
+    description:"See your ideas in full 3D glory. We craft photo real products and animation that make viewers pause, admire, and remember. From every angle, your product tells its story.",
   },
   {
     icon: icon7, 
@@ -118,7 +117,10 @@ const ServicesSection = () => {
       </div>
 
       <div className="flex flex-col sm:flex-row justify-center items-center mt-12 sm:mt-16 md:mt-24 gap-4 sm:gap-6 px-4">
-        <button
+        <a
+          href="https://www.instagram.com/pairtopixel/"
+          target="_blank"
+          rel="noopener noreferrer"
           className="
             w-full sm:w-auto
             bg-red-900 
@@ -139,8 +141,11 @@ const ServicesSection = () => {
           onClick={() => console.log("Start Project Clicked")}
         >
           Start Your Project
-        </button>
-        <button
+        </a>
+        <a
+          href="https://www.behance.net/pairtopixel"
+          target="_blank"
+          rel="noopener noreferrer"
           className="
             w-full sm:w-auto
             bg-yellow-500 
@@ -161,7 +166,7 @@ const ServicesSection = () => {
           onClick={() => console.log("See Portfolio Clicked")}
         >
           See Portfolio
-        </button>
+        </a>
       </div>
     </div>
   );

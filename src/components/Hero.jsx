@@ -8,7 +8,7 @@ const Hero = () => {
   const [isVisible, setIsVisible] = useState(true);
 
  
-  const phoneNumber = "8801754593323";  
+  const phoneNumber = "8801604176228";  
   const message = "Hi Pair to Pixel, I want to start a project!"; // ডিফল্ট মেসেজ
   
   // WhatsApp লিংক তৈরি করা হচ্ছে
